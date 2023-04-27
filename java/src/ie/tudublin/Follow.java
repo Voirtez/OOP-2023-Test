@@ -2,7 +2,8 @@ package ie.tudublin;
 
 public class Follow 
 {
-    public Follow(String word) {
+    public Follow(String word)
+    {
         this.word = word.toLowerCase();
     }
     @Override
@@ -12,16 +13,23 @@ public class Follow
 
     String word;
     
-    public String getWord() {
+    public String getWord()
+    {
         return word;
     }
-    public void setWord(String word) {
+
+    public void setWord(String word)
+    {
         this.word = word;
     }
-    public int getCount() {
+    
+    public int getCount()
+    {
         return count;
     }
-    public void setCount(int count) {
+
+    public void setCount(int count)
+    {
         this.count = count;
     }
     int count;

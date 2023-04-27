@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 import processing.core.PApplet;
 
-public class DANI extends PApplet {
+public class DANI extends PApplet
+{
 
 	int mode = 0;
 
@@ -101,7 +102,8 @@ public class DANI extends PApplet {
 
     }
 
-	public void setup() {
+	public void setup()
+    {
 		colorMode(HSB);
 
         loadFile();
@@ -110,7 +112,8 @@ public class DANI extends PApplet {
         sonnet = writeSonnet();
 	}
 
-	public void keyPressed() {
+	public void keyPressed()
+    {
         sonnet = writeSonnet();
 	}
 

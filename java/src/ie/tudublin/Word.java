@@ -2,27 +2,34 @@ package ie.tudublin;
 
 import java.util.ArrayList;
 
-public class Word {
+public class Word
+{
 
-    public String getWord() {
+    public String getWord()
+    {
         return word;
     }
-    public void setWord(String word) {
+    public void setWord(String word)
+    {
         this.word = word;
     }
 
     private String word;
     public ArrayList<Follow> follows;
 
-    public Word(String word) {
+    public Word(String word)
+    {
 
         this.word = word.toLowerCase();
         follows = new ArrayList<Follow>();
     }
+
     @Override
-    public String toString() {
+    public String toString()
+    {
         String ret =word + ": ";
-        for (Follow follow : follows) {
+        for (Follow follow : follows)
+        {
             ret += follow + " ";
         }
         return ret;
